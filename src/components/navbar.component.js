@@ -10,13 +10,13 @@ export default class Navbar extends Component {
         <div className="collpase navbar-collapse">
         <ul className="navbar-nav mr-auto">
           <li className="navbar-item">
-          <Link to="/" className="nav-link">Scores</Link>
+          <Link to="/" className="nav-link">Leaderboard</Link>
           </li>
           <li className="navbar-item">
-          <Link to="/create" className="nav-link">Create Score Log</Link>
+          <Link to="/create" className="nav-link">Add a New High Score</Link>
           </li>
           <li className="navbar-item">
-          <Link to="/user" className="nav-link">Create User</Link>
+          <Link to="/user" className="nav-link">Add New Player</Link>
           </li>
         </ul>
         </div>

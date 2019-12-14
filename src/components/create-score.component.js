@@ -82,10 +82,19 @@ export default class CreateScore extends Component {
   render() {
     return (
       <div>
-        <h3>Create New Score Log</h3>
+        <h3>Add a New High Score</h3>
         <form onSubmit={this.onSubmit}>
+        <div className="form-group"> 
+            <label>Game Name: </label>
+            <input  type="text"
+                required
+                className="form-control"
+                value={this.state.game}
+                onChange={this.onChangeGame}
+                />
+          </div>
           <div className="form-group"> 
-            <label>Username: </label>
+            <label>First Place: </label>
             <select ref="userInput"
                 required
                 className="form-control"
@@ -101,17 +110,9 @@ export default class CreateScore extends Component {
                 }
             </select>
           </div>
-          <div className="form-group"> 
-            <label>Game Name: </label>
-            <input  type="text"
-                required
-                className="form-control"
-                value={this.state.game}
-                onChange={this.onChangeGame}
-                />
-          </div>
+
           <div className="form-group">
-            <label>Score: </label>
+            <label>First Place Score: </label>
             <input 
                 type="text" 
                 className="form-control"
@@ -130,7 +131,7 @@ export default class CreateScore extends Component {
           </div>
 
           <div className="form-group">
-            <input type="submit" value="Create Score Log" className="btn btn-primary" />
+            <input type="submit" value="Add Score" className="btn btn-primary" />
           </div>
         </form>
       </div>

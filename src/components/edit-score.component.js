@@ -95,7 +95,7 @@ export default class EditScore extends Component {
   render() {
     return (
     <div>
-      <h3>Edit Score Log</h3>
+      <h3>Edit Score</h3>
       <form onSubmit={this.onSubmit}>
         <div className="form-group"> 
           <label>Username: </label>
@@ -143,7 +143,7 @@ export default class EditScore extends Component {
         </div>
 
         <div className="form-group">
-          <input type="submit" value="Edit Score Log" className="btn btn-primary" />
+          <input type="submit" value="Edit Score" className="btn btn-primary" />
         </div>
       </form>
     </div>

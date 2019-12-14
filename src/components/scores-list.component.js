@@ -51,11 +51,12 @@ export default class ScoresList extends Component {
   render() {
     return (
       <div>
-        <h3>Logged Scores</h3>
+        <h3>Leaderboard
+        </h3>
         <table className="table">
           <thead className="thead-light">
             <tr>
-              <th>Username</th>
+              <th>Name</th>
               <th>Game</th>
               <th>Score</th>
               <th>Date</th>
